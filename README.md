@@ -1,6 +1,6 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+The Enhanced i18n Hash Variable plugin will replace the #i18n.key# messages to Platform Translation value if the App Message translations are not available.
 
 # Getting Help
 
