@@ -2,7 +2,7 @@ package org.joget.marketplace;
 
 import org.joget.apps.app.lib.AppMessageHashVariable;
 import org.joget.apps.app.service.AppUtil;
-import org.joget.commons.util.LogUtil;
+//import org.joget.commons.util.LogUtil;
 import org.joget.commons.util.ResourceBundleUtil;
 
 public class Enhancedi18nHashVariable extends AppMessageHashVariable {
@@ -14,9 +14,9 @@ public class Enhancedi18nHashVariable extends AppMessageHashVariable {
         if (label != null && !label.equals(variableKey)) {
             return label;
         }
-        String test = ResourceBundleUtil.getMessage(variableKey);
-        LogUtil.info(getClass().getName(), test);
-        return test;
+        String platformTranslation = ResourceBundleUtil.getMessage(variableKey);
+        //LogUtil.info(getClass().getName(), platformTranslation);
+        return platformTranslation;
     }
 
     @Override
