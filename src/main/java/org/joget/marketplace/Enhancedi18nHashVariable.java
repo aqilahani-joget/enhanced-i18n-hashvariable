@@ -14,7 +14,7 @@ public class Enhancedi18nHashVariable extends AppMessageHashVariable {
         if (label != null && !label.equals(variableKey)) {
             return label;
         }
-        String platformTranslation = ResourceBundleUtil.getMessage(variableKey);
+        String platformTranslation = ResourceBundleUtil.getMessage(variableKey, "");
         //LogUtil.info(getClass().getName(), platformTranslation);
         return platformTranslation;
     }
